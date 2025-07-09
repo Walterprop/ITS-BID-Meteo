@@ -17,7 +17,7 @@ Una semplice applicazione Spring Boot per visualizzare i dati meteorologici dell
 - Docker (opzionale, per la containerizzazione)
 
 ## Come Avviare l'Applicazione
-### 1. Esecuzione in PowerSchell o VS Code (Per apprirlo su PowerShell Tasto destro del mouse all'interno della cartella -- Apri Terminale)
+### 1. Esecuzione in PowerSchell o VS Code (Per aprirlo su PowerShell Tasto destro del mouse all'interno della cartella -- Apri Terminale)
 
 ```bash
 # Costruisce l'immagine Docker
