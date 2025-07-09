@@ -17,8 +17,16 @@ Una semplice applicazione Spring Boot per visualizzare i dati meteorologici dell
 - Docker (opzionale, per la containerizzazione)
 
 ## Come Avviare l'Applicazione
+### 1. Esecuzione in PowerSchell o VS Code (Per apprirlo su PowerShell Tasto destro del mouse all'interno della cartella -- Apri Terminale)
 
-### 1. Esecuzione Locale
+```bash
+# Costruisce l'immagine Docker
+docker build -t weather-app .
+
+# Avvia il container
+docker run -p 8080:8080 weather-app
+
+### 2. Esecuzione Locale (solo se si posside MVNW)
 
 ```bash
 # Compila l'applicazione
@@ -30,29 +38,7 @@ mvnw spring-boot:run
 
 L'applicazione sarà disponibile su: `http://localhost:8080`
 
-### 2. Esecuzione con Docker
 
-```bash
-# Compila l'applicazione
-mvnw clean package
-.\mvnw clean package
-
-# Costruisce l'immagine Docker
-docker build -t weather-app .
-
-# Avvia il container
-docker run -p 8080:8080 weather-app
-```
-
-### 3. Esecuzione con Docker Compose
-
-```bash
-# Compila l'applicazione
-mvnw clean package
-
-# Avvia con docker-compose
-docker-compose up --build
-```
 
 ## Utilizzo
 
